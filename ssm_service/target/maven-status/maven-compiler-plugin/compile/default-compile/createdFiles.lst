@@ -1,2 +1,6 @@
+com\zjw\ssm\service\IOrdersService.class
 com\zjw\ssm\service\IProductService.class
+com\zjw\ssm\service\IUserService.class
+com\zjw\ssm\service\impl\UserServiceImpl.class
+com\zjw\ssm\service\impl\OrdersServiceImpl.class
 com\zjw\ssm\service\impl\ProductServiceImpl.class

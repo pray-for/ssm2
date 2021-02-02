@@ -1,1 +1,7 @@
 com\zjw\ssm\domain\Product.class
+com\zjw\ssm\domain\Permission.class
+com\zjw\ssm\domain\UserInfo.class
+com\zjw\ssm\domain\Member.class
+com\zjw\ssm\domain\Role.class
+com\zjw\ssm\domain\Traveller.class
+com\zjw\ssm\domain\Orders.class

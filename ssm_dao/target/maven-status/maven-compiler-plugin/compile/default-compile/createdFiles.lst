@@ -1,1 +1,6 @@
+com\zjw\ssm\dao\ITravellerDao.class
+com\zjw\ssm\dao\IMemberDao.class
 com\zjw\ssm\dao\IProductDao.class
+com\zjw\ssm\dao\IOrdersDao.class
+com\zjw\ssm\dao\IRoleDao.class
+com\zjw\ssm\dao\IUserDao.class

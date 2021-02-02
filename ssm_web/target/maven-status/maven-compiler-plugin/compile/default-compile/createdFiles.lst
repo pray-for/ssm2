@@ -1,1 +1,3 @@
 com\zjw\ssm\controller\ProductController.class
+com\zjw\ssm\controller\UserController.class
+com\zjw\ssm\controller\OrdersController.class
