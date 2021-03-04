@@ -1,5 +1,6 @@
 package com.zjw.ssm.dao;
 
+import com.zjw.ssm.domain.Permission;
 import com.zjw.ssm.domain.Role;
 import org.apache.ibatis.annotations.*;
 
@@ -28,4 +29,13 @@ public interface IRoleDao {
 
     @Insert("insert into role (roleName, roleDesc) values (#{roleName}, #{roleDesc})")
     public void save(Role role);
+
+    @Select("select * from role where id=#{roleId}")
+    public Role findById(String roleId);
+
+    @Select("select * from permission where id not in (select permissionId from role_permission where roleId=#{roleId})")
+    public List<Permission> findOtherPermission(String roleId);
+
+    @Insert("insert into role_permission(roleId,permissionId) values(#{roleId}, #{permissionId})")
+    public void addPermissionToRole(@Param("roleId") String roleId, @Param("permissionId") String permissionId);
 }

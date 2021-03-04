@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 
 @Controller
@@ -22,6 +23,7 @@ public class ProductController {
      * @throws Exception
      */
     @RequestMapping("/findAll.do")
+    @RolesAllowed("ADMIN")  //jsr250配置
     public ModelAndView findAll() throws Exception {
         //把查出的所有商品信息，封装到 ModelAndView
         ModelAndView mv = new ModelAndView();

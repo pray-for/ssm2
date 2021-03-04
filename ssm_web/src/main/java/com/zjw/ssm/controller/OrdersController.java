@@ -43,7 +43,7 @@ public class OrdersController {
      * @throws Exception
      */
     @RequestMapping("/findAll.do")
-    @Secured("ROLE_ADMIN")
+    @Secured("ROLE_ADMIN")   //secured注解
     public ModelAndView findAll(@RequestParam(name = "page", required = true, defaultValue = "1") int page,
                                 @RequestParam(name = "size", required = true, defaultValue = "4") int size) throws Exception{
         ModelAndView mv = new ModelAndView();
